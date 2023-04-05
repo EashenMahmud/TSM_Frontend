@@ -1,0 +1,207 @@
+<main class="main-container mt-5">
+    <div class="serach-bar">
+      <div class="row d-flex">
+        <div class="create col-xl-4 col-md-6">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle='modal' data-bs-target="#employee">
+           + Add New Employee
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade wrapper" id="employee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create New Project</h5>
+                  <button type="button" class="close1 bg-white" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class=" close1 text-dark">Close</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                 <div class="row d-flex">
+                    <div class="col-md-6  mb-3">
+                    <input type="text" class="form-control" aria-label="Default"  placeholder="First Name">
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default"  placeholder="Last Name">
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default"  placeholder="Email">
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default"  placeholder="Password">
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default"  placeholder="Address">
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default"  placeholder="Phone">
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <select class="custom-select form-control" id="inputGroupSelect01"  >
+                            <option selected>Designation <i class="fa-solid fa-down"></i></option>
+                            <option value="1">BacBon Limited</option>
+                            <option value="2">Brac Bank</option>
+                            <option value="3">Psc</option>
+                            <option value="3">Adb</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <select class="custom-select form-control" id="inputGroupSelect01"  >
+                            <option selected>Department <i class="fa-solid fa-down"></i></option>
+                            <option value="1">BacBon Limited</option>
+                            <option value="2">Brac Bank</option>
+                            <option value="3">Psc</option>
+                            <option value="3">Adb</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="col-md-6 create">
+                    <div class="input-group mb-3">
+                        <select class="custom-select form-control" id="inputGroupSelect01"  >
+                            <option selected>Type <i class="fa-solid fa-down"></i></option>
+                            <option value="1">BacBon Limited</option>
+                            <option value="2">Brac Bank</option>
+                            <option value="3">Psc</option>
+                            <option value="3">Adb</option>
+                        </select>
+                    </div>
+                    </div>
+              </div>
+                  
+                </div>
+                <div class="footer text-center align-items-center mb-4 ">
+                  <button type="button" class="btn btn-primary ">Add Employee</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search col-xl-4 col-md-6">
+          <form class=" d-inline-flex my-2 my-lg-0">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="search_bar search_text " name="" id=""  placeholder= "Search Projects">
+            <button type="submit" class="search_button">Search</button>
+          </form>
+        </div>
+        <div class="date col-xl-4 col-md-6">
+          <h6><i class="fa-solid fa-calendar"></i>date</h6>
+        </div>
+      </div>
+    </div>
+  <!-- Table with panel -->
+    
+<div class="card card-cascade narrower mt-5 table-wrapper sort">
+
+<!--Card Title-->
+<div
+  class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center"> 
+  <h5>All Employees</h5>
+</div>
+<!--/Card Title-->
+<div class="table-responsive">
+  <table class="table">
+    <div class="px-4">
+
+      <div class="table-wrapper">
+        <!--Table-->
+        <table class="table table-hover mb-0">
+            
+          <!--Table head-->
+          <thead>
+            <tr>
+              <!-- <th>
+                <input class="form-check-input" type="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox" class="mr-2 label-table"></label>
+              </th> -->
+              <th class="th-lg">
+                Name
+              </th>
+              <th class="th-lg">
+                Email
+              </th>
+              <th class="th-lg">
+                Phone
+              </th>
+              <th class="th-lg">
+               Dept.
+              </th>
+              <th class="th-lg">
+                Address
+              </th>
+              <th class="th-lg">
+                Designation
+              </th>
+              <th class="th-lg">
+                Type
+              </th>
+              <th class="th-lg">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <!--Table head-->
+  
+          <!--Table body-->
+          <tbody>
+            <tr>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>Progress</td>
+              <td>Larry</td>
+            </tr>
+            <tr>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>Progress</td>
+              <td>Larry</td>
+            </tr>
+            <tr>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>Progress</td>
+              <td>Larry</td>
+            </tr>
+            
+          </tbody>
+          <!--Table body-->
+        </table>
+        <!--Table-->
+      </div>
+  
+    </div>
+  </table>
+</div>
+
+
+
+</div>
+<!-- Table with panel -->
+   
+
+  </main>
